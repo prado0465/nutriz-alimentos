@@ -1,0 +1,108 @@
+.about {
+  padding: 20px;
+}
+
+.about-titulo {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  color: #559e55;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-titulo-h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(44, 160, 71);
+  text-align: center;
+}
+
+.about-content,
+.about-info {
+  border: 2px solid #2a2929;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content {
+  border-color: #2a2929;
+}
+
+.about-info {
+  border-color: #1c1b1b;
+  margin-top: 30px;
+}
+
+.about-image,
+.about-info-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  padding: 8px;
+  
+}
+
+.about-frase,
+.about-text {
+  text-align:center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23.9px;
+  text-align: justify;
+}
+
+.about-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 1px 4px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about-content,
+  .about-info {
+    padding: 10px;
+  }
+
+  .about-image,
+  .about-info-image {
+    width: 80%;
+    margin: 0 auto 15px auto;
+  }
+
+  .about-frase,
+  .about-text {
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .about-titulo-h1 {
+    font-size: 24px;
+  }
+
+  .about-titulo {
+    font-size: 30px;
+  }
+
+  .about-link {
+    font-size: 16px;
+    padding: 1px 16px;
+  }
+}

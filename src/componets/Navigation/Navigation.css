@@ -1,0 +1,81 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(0, 128, 0, 0.3);
+
+}
+
+.logo {
+  height: 50px; 
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu a {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navigation-menu a:hover {
+  color: #1c1d1f;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(176, 42, 42);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navigation-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.menu-open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(17, 17, 17, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.menu-open a {
+  font-size: 20px;
+  color: rgb(184, 39, 39);
+  text-align: center;
+}
+
+.menu-open a:hover {
+  color: #1b1b1c;
+}
